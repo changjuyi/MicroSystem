@@ -1,0 +1,9 @@
+
+State Machine - |lab5|y_present
+Name y_present.S4 y_present.S3 y_present.S2b y_present.S2a y_present.S1 y_present.Start 
+y_present.Start 0 0 0 0 0 0 
+y_present.S1 0 0 0 0 1 1 
+y_present.S2a 0 0 0 1 0 1 
+y_present.S2b 0 0 1 0 0 1 
+y_present.S3 0 1 0 0 0 1 
+y_present.S4 1 0 0 0 0 1 

@@ -1,0 +1,17 @@
+transcript on
+if {[file exists gate_work]} {
+	vdel -lib gate_work -all
+}
+vlib gate_work
+vmap work gate_work
+
+vcom -93 -work work {lab2_1.vho}
+
+vcom -93 -work work {C:/Users/JUYI/Desktop/110-1 Micro System/lab2/target 1/fulladd.vhd}
+
+vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=lab2_1_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs="+acc"  add
+
+add wave *
+view structure
+view signals
+run -all

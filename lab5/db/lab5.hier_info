@@ -1,0 +1,43 @@
+|lab5
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => Selector2.IN3
+w => Selector4.IN4
+w => Selector5.IN4
+w => Selector7.IN5
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => y_present.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => temp.OUTPUTSELECT
+w => Selector1.IN1
+w => Selector0.IN1
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => y_present.OUTPUTSELECT
+reset => temp.OUTPUTSELECT
+reset => temp.OUTPUTSELECT
+reset => temp.OUTPUTSELECT
+clock => temp[0].CLK
+clock => temp[1].CLK
+clock => temp[2].CLK
+clock => y_present~7.DATAIN
+s[0] <= temp[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= temp[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= temp[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

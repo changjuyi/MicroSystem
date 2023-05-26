@@ -1,0 +1,10 @@
+LIBRARY ieee;
+USE ieee.STD_LOGIC_1164.all;
+package lab1_2_package IS
+
+	component fulladd
+		PORT (w, x, y, z, w1, x1, y1, z1 : IN STD_LOGIC;
+				a, b, c, d, e, f, g, a1, b1, c1, d1, e1, f1, g1 : OUT STD_LOGIC);
+	end component;
+	
+END lab1_2_package;

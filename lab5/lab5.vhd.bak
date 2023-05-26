@@ -1,0 +1,76 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+entity lab5 is
+port(
+	clk,reset,w:in std_logic;
+	output: out std_logic_vector(2 downto 0)
+);
+end;
+
+architecture logicFun of lab5 is
+	type state_type is (start, s1, s2a,s2b,s3,s4);
+	signal y_now, y_next : state_type;
+	signal temp :std_logic_vector(2 downto 0);
+begin
+	process( w, y_now )
+	begin
+	if clock='1' then
+		if reset = '1' then
+			y_next <= Start;
+			temp<="000";
+		end if;
+		Case y_now is
+			when start=>
+				if w='0' then
+					y_next<=start;
+					temp<="100";
+				else
+					y_next<=s1;
+					temp<="001";
+				end if;
+			when s1=>
+				if w='0' then
+					y_next<=s2a;
+					temp<="010";
+				else
+					y_next <= s2b;
+					temp<="011";
+				end if;
+			when s2a=>
+				if w='0' then
+					y_next<=s3;
+					temp<="100";
+				else
+					y_next<=s3;
+					temp<="100";
+				end if;
+			when s2b=>
+				if w='0' then
+					y_next<=s3;
+					temp<="100";
+				else
+					y_next<=s3;
+					temp<="100";
+				end if;
+			when s3=>
+				if w='0' then
+					y_next<=s1;
+					temp<="001";
+				else
+					y_next<=s4;
+					temp<="101";
+				end if;
+			when s4=>
+				if w='0' then
+					y_next<=s4;
+					temp<="101";
+				else
+					y_next<=s4;
+					temp<="101";
+				end if;
+		end case;
+	end if;
+	end process;
+	s<=temp;
+end logicFun;

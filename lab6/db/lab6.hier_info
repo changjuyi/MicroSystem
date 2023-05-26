@@ -1,0 +1,38 @@
+|lab6
+w => ~NO_FANOUT~
+reset => y_present~3.DATAIN
+clock => y_present~1.DATAIN
+divisor[0] => Selector19.IN1
+divisor[1] => Selector21.IN1
+divisor[2] => Selector22.IN1
+divisor[3] => Selector23.IN1
+divisor[4] => Selector24.IN1
+divisor[5] => Selector25.IN1
+divisor[6] => Selector26.IN1
+divisor[7] => Selector27.IN2
+dividend[0] => Selector28.IN4
+dividend[1] => Selector29.IN4
+dividend[2] => Selector30.IN4
+dividend[3] => Selector31.IN4
+dividend[4] => Selector32.IN4
+dividend[5] => Selector33.IN4
+dividend[6] => Selector34.IN4
+dividend[7] => Selector35.IN4
+remainder[0] << remainder[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[1] << remainder[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[2] << remainder[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[3] << remainder[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[4] << remainder[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[5] << remainder[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[6] << remainder[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+remainder[7] << remainder[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[0] << quotient[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[1] << quotient[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[2] << quotient[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[3] << quotient[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[4] << quotient[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[5] << quotient[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[6] << quotient[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+quotient[7] << quotient[7]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,103 @@
+Info: Start Nativelink Simulation process
+
+========= EDA Simulation Settings =====================
+
+Sim Mode              :  Gate
+Family                :  cycloneive
+Quartus root          :  c:/intelfpga_lite/18.1/quartus/bin64/
+Quartus sim root      :  c:/intelfpga_lite/18.1/quartus/eda/sim_lib
+Simulation Tool       :  modelsim-altera
+Simulation Language   :  vhdl
+Version               :  93
+Simulation Mode       :  GUI
+Sim Output File       :  lab4.vho
+Sim SDF file          :  lab4__vhdl.sdo
+Sim dir               :  simulation\modelsim
+
+=======================================================
+
+Info: Starting NativeLink simulation with ModelSim-Altera software
+Sourced NativeLink script c:/intelfpga_lite/18.1/quartus/common/tcl/internal/nativelink/modelsim.tcl
+Warning: File lab4_run_msim_gate_vhdl.do already exists - backing up current file as lab4_run_msim_gate_vhdl.do.bak
+Probing transcript
+ModelSim-Altera Info: # Reading C:/intelFPGA/18.1/modelsim_ae/tcl/vsim/pref.tcl
+ModelSim-Altera Info: # do lab4_run_msim_gate_vhdl.do
+ModelSim-Altera Info: # if {[file exists gate_work]} {
+ModelSim-Altera Info: # 	vdel -lib gate_work -all
+ModelSim-Altera Info: # }
+ModelSim-Altera Info: # vlib gate_work
+ModelSim-Altera Info: # vmap work gate_work
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+ModelSim-Altera Info: # vmap work gate_work 
+ModelSim-Altera Info: # Copying C:/intelFPGA/18.1/modelsim_ae/win32aloem/../modelsim.ini to modelsim.ini
+ModelSim-Altera Info: # Modifying modelsim.ini
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {lab4.vho}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 13:42:10 on Nov 17,2021
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work lab4.vho 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package VITAL_Timing
+ModelSim-Altera Info: # -- Loading package VITAL_Primitives
+ModelSim-Altera Info: # -- Loading package cycloneive_atom_pack
+ModelSim-Altera Info: # -- Loading package cycloneive_components
+ModelSim-Altera Info: # -- Compiling entity hard_block
+ModelSim-Altera Info: # -- Compiling architecture structure of hard_block
+ModelSim-Altera Info: # -- Loading package dffeas_pack
+ModelSim-Altera Info: # -- Loading package altera_primitives_components
+ModelSim-Altera Info: # -- Compiling entity lab4
+ModelSim-Altera Info: # -- Compiling architecture structure of lab4
+ModelSim-Altera Info: # End time: 13:42:11 on Nov 17,2021, Elapsed time: 0:00:01
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vcom -93 -work work {C:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd}
+ModelSim-Altera Info: # Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # Start time: 13:42:11 on Nov 17,2021
+ModelSim-Altera Info: # vcom -reportprogress 300 -93 -work work C:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd 
+ModelSim-Altera Info: # -- Loading package STANDARD
+ModelSim-Altera Info: # -- Loading package TEXTIO
+ModelSim-Altera Info: # -- Loading package std_logic_1164
+ModelSim-Altera Info: # -- Loading package std_logic_arith
+ModelSim-Altera Info: # -- Loading package STD_LOGIC_UNSIGNED
+ModelSim-Altera Info: # -- Compiling entity lab4
+ModelSim-Altera Info: # -- Compiling architecture Behavior of lab4
+ModelSim-Altera Info: # End time: 13:42:11 on Nov 17,2021, Elapsed time: 0:00:00
+ModelSim-Altera Info: # Errors: 0, Warnings: 0
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=lab4_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs="+acc"  lab4
+ModelSim-Altera Info: # vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -sdftyp /NA=lab4_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs=""+acc"" lab4 
+ModelSim-Altera Info: # Start time: 13:42:11 on Nov 17,2021
+ModelSim-Altera Info: # //  ModelSim - Intel FPGA Edition 10.5b Oct  5 2016
+ModelSim-Altera Info: # //
+ModelSim-Altera Info: # //  Copyright 1991-2016 Mentor Graphics Corporation
+ModelSim-Altera Info: # //  All Rights Reserved.
+ModelSim-Altera Info: # //
+ModelSim-Altera Info: # //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+ModelSim-Altera Info: # //  secrets and commercial or financial information that are the property of
+ModelSim-Altera Info: # //  Mentor Graphics Corporation and are privileged, confidential,
+ModelSim-Altera Info: # //  and exempt from disclosure under the Freedom of Information Act,
+ModelSim-Altera Info: # //  5 U.S.C. Section 552. Furthermore, this information
+ModelSim-Altera Info: # //  is prohibited from disclosure under the Trade Secrets Act,
+ModelSim-Altera Info: # //  18 U.S.C. Section 1905.
+ModelSim-Altera Info: # //
+ModelSim-Altera Info: # Loading std.standard
+ModelSim-Altera Info: # Loading std.textio(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_1164(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_arith(body)
+ModelSim-Altera Info: # Loading ieee.std_logic_unsigned(body)
+ModelSim-Altera Info: # Loading work.lab4(behavior)
+ModelSim-Altera Info: # SDF 10.5b Compiler 2016.10 Oct  5 2016
+ModelSim-Altera Info: # 
+ModelSim-Altera Info: # Loading instances from lab4_vhd.sdo
+ModelSim-Altera Info: # ** Error (suppressible): (vsim-SDF-3250) lab4_vhd.sdo(0): Failed to find INSTANCE '/NA'.
+ModelSim-Altera Info: # ** Error (suppressible): (vsim-SDF-3894) : Errors occured in reading and resolving instances from compiled SDF file(s).
+ModelSim-Altera Info: # ** Error (suppressible): (vsim-SDF-3250) lab4_vhd.sdo(0): Failed to find INSTANCE '/NA'.
+ModelSim-Altera Info: # Error loading design
+ModelSim-Altera Info: # Error: Error loading design
+ModelSim-Altera Info: #        Pausing macro execution
+ModelSim-Altera Info: # MACRO ./lab4_run_msim_gate_vhdl.do PAUSED at line 12
+ModelSim-Altera Info: # End time: 13:43:09 on Nov 17,2021, Elapsed time: 0:00:58
+ModelSim-Altera Info: # Errors: 3, Warnings: 0
+Info: NativeLink simulation flow was successful

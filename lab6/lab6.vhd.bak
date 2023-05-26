@@ -1,0 +1,9 @@
+Library ieee;
+Use ieee.std_logic_1164.all;
+Use ieee.std_logic_unsigned.all;
+
+Entity lab6 is
+	port(
+			clk, clear : in std_logic;
+			divisor, divided : in std_logic_vector(7 downto 0);
+			remainder :ㄒ   

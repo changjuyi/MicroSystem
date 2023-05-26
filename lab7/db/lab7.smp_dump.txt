@@ -1,0 +1,10 @@
+
+State Machine - |lab7|y
+Name y.error y.run5 y.run4 y.run3 y.run2 y.run1 y.start 
+y.start 0 0 0 0 0 0 0 
+y.run1 0 0 0 0 0 1 1 
+y.run2 0 0 0 0 1 0 1 
+y.run3 0 0 0 1 0 0 1 
+y.run4 0 0 1 0 0 0 1 
+y.run5 0 1 0 0 0 0 1 
+y.error 1 0 0 0 0 0 1 

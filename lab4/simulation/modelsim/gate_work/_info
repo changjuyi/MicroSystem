@@ -1,0 +1,127 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/JUYI/Desktop/110-1 Micro System/lab4/simulation/modelsim
+Ehard_block
+Z1 w1637127693
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 g8;l:a_bzlE?3R3d7zk3Z0
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 Yj^f[Ven<H;0LiK:6PWEg0
+R0
+Z8 8lab4.vho
+Z9 Flab4.vho
+l0
+L34
+VF25TiLjh`DQcC8Z=zbJ?Y3
+!s100 A`ID_i56<Ua56=ZD=[EG=2
+Z10 OV;C;10.5b;63
+31
+Z11 !s110 1637127731
+!i10b 1
+Z12 !s108 1637127730.000000
+Z13 !s90 -reportprogress|300|-93|-work|work|lab4.vho|
+Z14 !s107 lab4.vho|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 hard_block 0 22 F25TiLjh`DQcC8Z=zbJ?Y3
+l64
+L50
+VZ2P8e]:^NT<7Y7=;nM1Vi3
+!s100 2S?JL;LJ@<3:BHXTNcXS]3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elab4
+Z17 w1637126922
+Z18 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z19 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+R5
+R6
+R0
+Z20 8C:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd
+Z21 FC:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd
+l0
+L4
+VOGXac_7jXT0iT[=TQCBLc2
+!s100 QnX;O>FhVE3g9FnK21BA90
+R10
+31
+R11
+!i10b 1
+Z22 !s108 1637127731.000000
+Z23 !s90 -reportprogress|300|-93|-work|work|C:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd|
+Z24 !s107 C:/Users/JUYI/Desktop/110-1 Micro System/lab4/lab4.vhd|
+!i113 1
+R15
+R16
+Abehavior
+R18
+R19
+R5
+R6
+DEx4 work 4 lab4 0 22 OGXac_7jXT0iT[=TQCBLc2
+l18
+L17
+VC;FBRjh:ldgl0Ci<TDC0R3
+!s100 PTb[NRENLJ0P@R_cF`FSS1
+R10
+31
+R11
+!i10b 1
+R22
+R23
+R24
+!i113 1
+R15
+R16
+Astructure
+R3
+R7
+R2
+DPx6 altera 11 dffeas_pack 0 22 :S1C`o89Vbe5bV6`:6CaB3
+R4
+R5
+R6
+DPx6 altera 28 altera_primitives_components 0 22 z?[99Tn<@QGNik3V1c6ah1
+DEx4 work 4 lab4 0 22 9SWF]=HAabA;8m9d1T==51
+l227
+L131
+Vcm=G4Vk_o4G:R^^Fe7WFF1
+!s100 5ekkZ@@<hZ9KB;eS32WAh0
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+R9
+R1
+R8

@@ -1,0 +1,18 @@
+
+State Machine - |Divider|y_next
+Name y_next.S4 y_next.S3 y_next.S2b y_next.S2a y_next.S1 y_next.Start 
+y_next.Start 0 0 0 0 0 0 
+y_next.S1 0 0 0 0 1 1 
+y_next.S2a 0 0 0 1 0 1 
+y_next.S2b 0 0 1 0 0 1 
+y_next.S3 0 1 0 0 0 1 
+y_next.S4 1 0 0 0 0 1 
+
+State Machine - |Divider|y_present
+Name y_present.S4 y_present.S3 y_present.S2b y_present.S2a y_present.S1 y_present.Start 
+y_present.Start 0 0 0 0 0 0 
+y_present.S1 0 0 0 0 1 1 
+y_present.S2a 0 0 0 1 0 1 
+y_present.S2b 0 0 1 0 0 1 
+y_present.S3 0 1 0 0 0 1 
+y_present.S4 1 0 0 0 0 1 

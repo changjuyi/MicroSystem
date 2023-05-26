@@ -1,0 +1,109 @@
+# Reading C:/intelFPGA/18.1/modelsim_ae/tcl/vsim/pref.tcl
+# do lab2_1_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work gate_work 
+# Copying C:/intelFPGA/18.1/modelsim_ae/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {lab2_1.vho}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:33 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work lab2_1.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Compiling entity lab2_1
+# -- Compiling architecture structure of lab2_1
+# End time: 13:50:33 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {C:/Users/JUYI/Desktop/110-1 Micro System/lab2/target 1/fulladd.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 13:50:33 on Oct 20,2021
+# vcom -reportprogress 300 -93 -work work C:/Users/JUYI/Desktop/110-1 Micro System/lab2/target 1/fulladd.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity fulladd
+# -- Compiling architecture Func of fulladd
+# End time: 13:50:33 on Oct 20,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps +transport_int_delays +transport_path_delays -sdftyp /NA=lab2_1_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs="+acc"  add
+# vsim -t 1ps "+transport_int_delays" "+transport_path_delays" -sdftyp /NA=lab2_1_vhd.sdo -L altera -L cycloneive -L gate_work -L work -voptargs=""+acc"" add 
+# Start time: 13:50:33 on Oct 20,2021
+# ** Error: (vsim-3170) Could not find 'add'.
+#         Searched libraries:
+#             C:/intelFPGA/18.1/modelsim_ae/altera/vhdl/altera
+#             C:/intelFPGA/18.1/modelsim_ae/altera/vhdl/cycloneive
+#             C:/Users/JUYI/Desktop/110-1 Micro System/lab2/target 1/simulation/modelsim/gate_work
+#             C:/Users/JUYI/Desktop/110-1 Micro System/lab2/target 1/simulation/modelsim/gate_work
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./lab2_1_run_msim_gate_vhdl.do PAUSED at line 12
+vsim work.fulladd
+# vsim work.fulladd 
+# Start time: 13:50:33 on Oct 20,2021
+# //  ModelSim - Intel FPGA Edition 10.5b Oct  5 2016
+# //
+# //  Copyright 1991-2016 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Intel FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fulladd(func)
+vsim work.fulladd
+# End time: 13:51:14 on Oct 20,2021, Elapsed time: 0:00:41
+# Errors: 1, Warnings: 0
+# vsim work.fulladd 
+# Start time: 13:51:14 on Oct 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fulladd(func)
+vsim work.fulladd
+# End time: 13:51:36 on Oct 20,2021, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0
+# vsim work.fulladd 
+# Start time: 13:51:36 on Oct 20,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.fulladd(func)
+add wave  \
+sim:/fulladd/cin
+restart
+force -freeze sim:/fulladd/cin 0 0, 1 {200 ps} -r 400
+force -freeze sim:/fulladd/x 0 0, 1 {100 ps} -r 200
+force -freeze sim:/fulladd/y 0 0, 1 {50 ps} -r 100
+run
+add wave  \
+sim:/fulladd/cin \
+sim:/fulladd/x \
+sim:/fulladd/y \
+sim:/fulladd/s \
+sim:/fulladd/cout
+run
+# End time: 14:00:35 on Oct 20,2021, Elapsed time: 0:08:59
+# Errors: 0, Warnings: 0

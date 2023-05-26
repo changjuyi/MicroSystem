@@ -1,0 +1,113 @@
+------------------------------------------------------------
+Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'y_present.S4'
+Slack : -4.340
+TNS   : -59.993
+
+Type  : Slow 1200mV 85C Model Setup 'y_present.S3'
+Slack : -4.282
+TNS   : -58.007
+
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -0.038
+TNS   : -0.076
+
+Type  : Slow 1200mV 85C Model Hold 'y_present.S3'
+Slack : 0.210
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'y_present.S4'
+Slack : 0.384
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clock'
+Slack : 0.406
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -10.710
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'y_present.S3'
+Slack : 0.417
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'y_present.S4'
+Slack : 0.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'y_present.S4'
+Slack : -3.859
+TNS   : -53.149
+
+Type  : Slow 1200mV 0C Model Setup 'y_present.S3'
+Slack : -3.794
+TNS   : -51.301
+
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : 0.159
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clock'
+Slack : 0.264
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'y_present.S3'
+Slack : 0.293
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'y_present.S4'
+Slack : 0.392
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -10.710
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'y_present.S3'
+Slack : 0.340
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'y_present.S4'
+Slack : 0.375
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'y_present.S4'
+Slack : -1.946
+TNS   : -22.394
+
+Type  : Fast 1200mV 0C Model Setup 'y_present.S3'
+Slack : -1.927
+TNS   : -19.751
+
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : 0.335
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'y_present.S3'
+Slack : -0.071
+TNS   : -0.226
+
+Type  : Fast 1200mV 0C Model Hold 'y_present.S4'
+Slack : -0.005
+TNS   : -0.005
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.318
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
+Slack : -3.000
+TNS   : -9.765
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'y_present.S3'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'y_present.S4'
+Slack : 0.370
+TNS   : 0.000
+
+------------------------------------------------------------
