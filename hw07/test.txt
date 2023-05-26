@@ -1,0 +1,100 @@
+
+			CASE icrt IS
+				when "00" =>
+					r0<=rt;
+				when "01" =>
+					r1<=rt;
+				when "10" =>
+					r2<=rt;
+				when "11" =>
+					r3<=rt;
+			end case;
+
+		CASE icrs IS
+			when "00" =>
+				ledgicrs <= "00";
+				rs<=r0;
+			when "01" =>
+				ledgicrs <= "01";
+				rs<=r1;
+			when "10" =>
+				ledgicrs <= "10";
+				rs<=r2;
+			when "11" =>
+				ledgicrs <= "11";
+				rs<=r3;
+		end case;	
+		CASE icrt IS
+			when "00" =>
+				ledgicrt <= "00";
+				rt<=r0;
+			when "01" =>
+				ledgicrt <= "01";
+				rt<=r1;
+			when "10" =>
+				ledgicrt <= "10";
+				rt<=r2;
+			when "11" =>
+				ledgicrt <= "11";
+				rt<=r3;
+		end case;
+		CASE ico IS
+						WHEN "0000" =>
+							ledgico <= "0000";
+							rs<=data;
+						WHEN "0001" =>
+							ledgico <= "0001";
+							rs<=rt;
+						WHEN "0010" =>
+							ledgico <= "0010";
+							rs<=rs+rt;
+						WHEN "0011" =>
+							ledgico <= "0011";
+							rs<=rs-rt;
+						WHEN "0100" =>
+							ledgico <= "0100";
+							rs <= rs and rt;
+						WHEN "0101" =>
+							ledgico <= "0101";
+							rs <= rs or rt;
+						WHEN "0110" =>
+							ledgico <= "0110";
+							rs <= rs nor rt;
+						WHEN "0111" =>
+							ledgico <= "0111";
+							if rs < rt then
+								rs<=(OTHERS => '0');
+								rs(0)<='1';
+							else
+								rs<=(OTHERS => '0');
+							end if;
+						WHEN "1000" =>
+							ledgico <= "1000";	
+							rs<=rs;			
+						WHEN OTHERS =>
+							ledgico <= "1111";
+							rs<=rs;					
+					END CASE ;
+		nrs<=
+			r0 when rs="00" else 
+			r1 when rs="01" else 
+			r3 when rs="10" else 
+			r4 when rs="11"; 
+		nrt <=
+			r0 when rt="00" else 
+			r1 when rt="01" else 
+			r2 when rt="10" else 
+			r3 when rt="11" ;
+	
+
+
+	nrs<=
+		r0 when icrs="00" else 
+		r1 when icrs="01" else 
+		r2 when icrs="10" else 
+		r3 when icrs="11"; 
+	nrt <=
+		r0 when icrt="00" else 
+		r1 when icrt="01" else 
+		r2 when icrt="10" else 
+		r3 when icrt="11" ;
